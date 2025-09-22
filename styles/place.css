@@ -1,0 +1,135 @@
+header {
+    position: relative;
+    background: #0077b6;
+    z-index: 10;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    line-height: 1.5;
+}
+
+main {
+    min-height: 68vh;
+    position: relative;
+    z-index: 1;
+}
+
+.hero {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.data {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(251, 69, 69, 0.8);
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+.data h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.data-grid {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.data-label {
+    font-weight: bold;
+}
+
+/* Weather section (bottom-right) */
+.weather {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(251, 69, 69, 0.8);
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 250px;
+}
+
+.weather-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.weather-header img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+footer {
+    position: relative;
+    z-index: 1;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        position: static;      
+        height: auto;
+    }
+
+    .hero img {
+        height: auto;
+    }
+
+    .data, .weather {
+        position: static;     
+        margin: 10px;
+        background: #0077b6;   
+        color: #fff;
+        max-width: none;
+    }
+
+    body {
+        background: #f9f9f9; 
+        color: #333;
+    }
+}
+
+
+
+

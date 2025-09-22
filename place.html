@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Mike Brignol | Informations about origin Country.">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Labadee</h1>
+        <p>Most Beautiful beach in haiti</p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Place</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+        <picture>
+            <img src="images/labadee13.webp" alt="Labadee">
+        </picture>
+        </section>
+
+        <section class="data">
+            <h2>Fortress Facts</h2>
+            <div class="data-grid">
+                <div class="data-item">
+                    <span class="data-label">Location:</span>
+                    <span>Cap-Haitien</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Elevation:</span>
+                    <span>10 meters</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Built:</span>
+                    <span>1986</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Etymology</span>
+                    <span>Marquis de La Badie</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Status:</span>
+                    <span>Private Resort</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="weather">
+             <div class="weather-header">
+                <img class="weather-icon" src="images/weather_ico.svg" alt="Weather Icon">
+                <h2>Weather</h2>
+            </div>
+            <div class="data-grid">
+                <div class="data-item">
+                    <span class="data-label">Temperature:</span>
+                    <span><span id="temperature">27</span>°C</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Wind Speed:</span>
+                    <span><span id="wind-speed">13</span> mph</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Conditions:</span>
+                    <span>Sunny</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Wind Chill:</span>
+                    <span id="wind-chill">N/A</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><span id="currentYear">Mike Brignol</span></p>
+        <p> <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
