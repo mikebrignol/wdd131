@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #0077b6;
+    --secondary-color: #A9FBD7;
+    --accent1-color: #1B3022;
+    --accent2-color: #000100;
+    --heading-font: "Merriweather", sans-serif;
+    --body-font: "DM Sans", sans-serif;
+}
+
 header {
     position: relative;
     background: #0077b6;
@@ -8,6 +17,7 @@ header {
 }
 
 header h1 {
+    font-family: var(--heading-font);
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
 }
@@ -20,7 +30,7 @@ header h1 {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--body-font);
     color: #fff;
     line-height: 1.5;
 }
@@ -51,7 +61,7 @@ main {
     position: absolute;
     top: 20px;
     left: 20px;
-    background: #0077b6;
+    background: var(--primary-color);
     padding: 1rem;
     border-radius: 8px;
     max-width: 300px;
@@ -76,7 +86,7 @@ main {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    background: #0077b6;
+    background: var(--primary-color);
     padding: 1rem;
     border-radius: 8px;
     max-width: 250px;
@@ -149,6 +159,6 @@ footer {
         content: "";
     }
 
-
+}
 
 
