@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="WDD 131 - Product description page - Week 5">
+    <meta name="author" content="Mike Brignol">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Product Review Form</h1>
+  </header>
+
+  <main>
+    <form method="get" action="review.html">
+     
+      <label for="productName">Product Name:</label>
+      <select id="productName" name="productName" required>
+        <option value="" disabled selected>Select a Product ...</option>
+     
+      </select>
+
+      <fieldset>
+        <legend>Overall Rating:</legend>
+        <label><input type="radio" name="rating" value="1" required> ☆</label>
+        <label><input type="radio" name="rating" value="2"> ☆☆</label>
+        <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+        <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+        <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+      </fieldset>
+
+      <label for="installDate">Date of Installation:</label>
+      <input type="date" id="installDate" name="installDate" required>
+
+      <fieldset>
+        <legend>Useful Features (check all that apply):</legend>
+        <label><input type="checkbox" id="feature1" name="features" value="Durable"> Durable</label>
+        <label><input type="checkbox" id="feature2" name="features" value="Easy to Use"> Easy to Use</label>
+        <label><input type="checkbox" id="feature3" name="features" value="Affordable"> Affordable</label>
+        <label><input type="checkbox" id="feature4" name="features" value="High Quality"> High Quality</label>
+      </fieldset>
+
+  
+      <label for="review">Written Review (optional):</label>
+      <textarea id="review" name="review"></textarea>
+
+   
+      <label for="userName">Your Name (optional):</label>
+      <input type="text" id="userName" name="userName">
+
+      
+    <button type="submit">submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p><span id="currentYear">Mike Brignol</span></p>
+    <p> <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
