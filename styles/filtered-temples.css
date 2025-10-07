@@ -18,11 +18,16 @@ header {
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
 header h1 {
     font-size: 1.8rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem 0;
+    text-align: center;
+    
 }
 
 #temples {
@@ -71,6 +76,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     margin-top: 0.5rem;
+    gap: 1.5rem;
 }
 
 nav a {
